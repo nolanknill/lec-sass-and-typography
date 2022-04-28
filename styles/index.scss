@@ -1,0 +1,60 @@
+@use "./partials/colors" as *;
+@use "./partials/typography" as *;
+@use "./partials/mixins" as *;
+
+$width-nav : 10%;
+$width-main: 55%;
+$width-author: 100% - $width-main - $width-nav;
+
+body {
+    color: $color-primary;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.nav {
+    width: $width-nav;
+
+    &__list {
+        @include flex-center-vert;
+        @include reset-list;
+        height: 100%;
+    }
+
+    &__item {
+        margin: 2rem 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        
+        &--active {
+            border-right: 0.25rem solid $color-primary;
+            border-left: 0.25rem solid white;
+        }
+
+        &--logo {
+            margin-top: 1rem;
+            font-size: 3rem;
+        }
+
+        &--logout {
+            margin-top: auto;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.main {
+    width: $width-main;
+    background-color: #eee;
+}
+
+.author {
+    width: $width-author;
+    background-color: $color-primary;
+    color: white;
+}

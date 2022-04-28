@@ -1,0 +1,10 @@
+$font-stack: Helvetica, sans-serif;
+$root-font-size: 16px;
+
+html {
+    font-size: $root-font-size;
+}
+
+body {
+    font-family: $font-stack;
+}

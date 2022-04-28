@@ -1,0 +1,10 @@
+@mixin flex-center-vert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin reset-list {
+    padding-left: 0;
+    list-style: none;
+}
