@@ -8,3 +8,8 @@
     padding-left: 0;
     list-style: none;
 }
+
+@mixin heading-top-level {
+    font-size: 3rem;
+    letter-spacing: 4px;
+}

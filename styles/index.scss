@@ -51,6 +51,24 @@ body {
 .main {
     width: $width-main;
     background-color: #eee;
+    padding: 1.5rem;
+
+    &__title { 
+        margin-top: 1rem;
+        @include heading-top-level;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 2.5rem;
+        font-weight: lighter;
+
+        &--italics {
+            font-style: italic;
+        
+        }
+    }
 }
 
 .author {

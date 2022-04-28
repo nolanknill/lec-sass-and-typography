@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 body {
@@ -48,6 +48,21 @@ body {
 .main {
   width: 55%;
   background-color: #eee;
+  padding: 1.5rem;
+}
+.main__title {
+  margin-top: 1rem;
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+.main__text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  font-weight: lighter;
+}
+.main__text--italics {
+  font-style: italic;
 }
 
 .author {
